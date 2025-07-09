@@ -13,6 +13,8 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import FloodWait, UserIsBlocked, PeerIdInvalid
 from pyrogram.types import ReplyKeyboardRemove
+from keep_alive import keep_alive
+keep_alive()
 # === Bot Credentials ===
 API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
